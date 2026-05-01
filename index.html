@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梅のコンフィチュール 活用レシピ集</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Noto Serif JP -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Serif JP', serif;
+            background-color: #faf8f5;
+            color: #4a433d;
+            line-height: 1.8;
+        }
+ 
+        /* ヘッダーセクション */
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('./背景.png') no-repeat center center;
+            background-size: cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-bottom: 80px;
+        }
+ 
+        .hero-title p {
+            letter-spacing: 0.3rem;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+ 
+        .hero-title h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.5rem;
+        }
+ 
+        .hero-title .subtitle {
+            font-size: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.6);
+            display: inline-block;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+ 
+        /* レシピ共通スタイル */
+        .recipe-section {
+            margin-bottom: 120px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+ 
+        .recipe-number {
+            font-size: 3rem;
+            color: #c4a484;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            line-height: 1;
+        }
+ 
+        .recipe-header {
+            border-bottom: 1px solid #e0dcd6;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+        }
+ 
+        .recipe-title {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+ 
+        .card-custom {
+            background-color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            height: 100%;
+            padding: 30px;
+        }
+ 
+        .card-title {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #8fa18d;
+            margin-bottom: 20px;
+            letter-spacing: 0.1rem;
+            border-left: 3px solid #8fa18d;
+            padding-left: 10px;
+        }
+ 
+        .ingredients-list dt {
+            font-weight: normal;
+            border-bottom: 1px dotted #ddd;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+ 
+        .step-item {
+            margin-bottom: 20px;
+        }
+ 
+        .step-number {
+            background-color: #8fa18d;
+            color: white;
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 12px;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+ 
+        .step-content {
+            display: flex;
+            align-items: flex-start;
+        }
+ 
+        .step-text {
+            font-size: 1rem;
+        }
+ 
+        .step-desc {
+            font-size: 0.85rem;
+            color: #777;
+            margin-top: 5px;
+            display: block;
+        }
+ 
+        .point-box {
+            background-color: #f3ede4;
+            padding: 20px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            border-left: 4px solid #d4a373;
+        }
+ 
+        footer {
+            background-color: #2d2926;
+            color: #dcd6d0;
+            padding: 60px 0;
+            text-align: center;
+            font-size: 0.8rem;
+            letter-spacing: 0.1rem;
+        }
+    </style>
+</head>
+<body>
+ 
+<header class="hero-section">
+    <div class="hero-title">
+        <p>HOMEMADE RECIPE COLLECTION</p>
+        <h1>梅のコンフィチュール</h1>
+        <span class="subtitle">活用レシピ集</span>
+        <div class="mt-5">
+            <small>手作りの梅コンフィチュールが主役の、<br>心と身体が喜ぶ5つのレシピをご紹介します。</small>
+        </div>
+    </div>
+</header>
+ 
+<div class="container pb-5">
+    
+    <!-- 01 鶏の梅照り焼き -->
+    <section class="recipe-section">
+        <div class="recipe-header d-flex align-items-end">
+            <span class="recipe-number me-3">01</span>
+            <h2 class="recipe-title">鶏の梅照り焼き</h2>
+        </div>
+        <p class="text-muted mb-4">梅のコンフィチュールの甘酸っぱさと醤油のコクが、ジューシーな鶏肉に絡む、ボリューム満点のメイン料理です。</p>
+ 
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card card-custom p-3 text-center">
+                    <img src="01.jpg" class="img-fluid rounded-3 mb-2" alt="焼き立ての梅スコーン">
+                    <p class="text-muted small mb-0">焼き立ての様子</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-custom">
+                    <h5 class="card-title">材料</h5>
+                    <dl class="ingredients-list">
+                        <dt><span>鶏もも肉</span><span>2枚</span></dt>
+                        <dt><span>塩・胡椒</span><span>少々</span></dt>
+                        <dt><span>梅コンフィチュール</span><span>大さじ3</span></dt>
+                        <dt><span>醤油</span><span>大さじ2</span></dt>
+                        <dt><span>酒</span><span>大さじ1</span></dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-custom">
+                    <h5 class="card-title">作り方</h5>
+                    <div class="step-item">
+                        <div class="step-content">
+                            <span class="step-number">1</span>
+                            <span class="step-text">鶏肉に下味をつける。</span>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-content">
+                            <span class="step-number">2</span>
+                            <span class="step-text">フライパンで皮目から焼き、両面をこんがりと焼き上げる。</span>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-content">
+                            <span class="step-number">3</span>
+                            <span class="step-text">調味料を合わせ、一気に加えて煮絡める。</span>
+                        </div>
+                    </div>
+                    <div class="point-box">
+                        💡 <strong>Point:</strong> 強火で一気に煮絡めることで、美しい照りとコクが増します。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- 02 梅ジュレ -->
+    <section class="recipe-section">
+        <div class="recipe-header d-flex align-items-end">
+            <span class="recipe-number me-3">02</span>
+            <h2 class="recipe-title">梅ジュレ</h2>
+        </div>
+        <p class="text-muted mb-4">キラキラと輝く涼しげなデザート。梅の爽やかな酸味がお口直しにもぴったりです。</p>
+ 
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card card-custom p-3 text-center">
+                    <img src="02.jpg" class="img-fluid rounded-3 mb-2" alt="焼き立ての梅スコーン">
+                    <p class="text-muted small mb-0">焼き立ての様子</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-custom">
+                    <h5 class="card-title">材料</h5>
+                    <dl class="ingredients-list">
+                        <dt><span>梅コンフィチュール</span><span>80g</span></dt>
+                        <dt><span>水</span><span>200ml</span></dt>
+                        <dt><span>ゼラチン</span><span>5g</span></dt>
+                        <dt><span>砂糖</span><span>大さじ1</span></dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-custom">
+                    <h5 class="card-title">作り方</h5>
+                    <div class="step-item"><div class="step-content"><span class="step-number">1</span><span class="step-text">ゼラチンを水でふやかしておく。</span></div></div>
+                    <div class="step-item"><div class="step-content"><span class="step-number">2</span><span class="step-text">鍋に水と砂糖を入れ火にかけ、溶けたらゼラチンを加える。</span></div></div>
+                    <div class="step-item"><div class="step-content"><span class="step-number">3</span><span class="step-text">梅コンフィチュールを混ぜ、容器に入れて冷やし固める。</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- (旧) 03 梅スコーン -->
+    <!-- <section class="recipe-section">
+        <div class="recipe-header d-flex align-items-end">
+            <span class="recipe-number me-3">03</span>
+            <h2 class="recipe-title">梅スコーン</h2>
+        </div>
+        <p class="text-muted mb-4">サクサクの生地に甘酸っぱい梅を忍ばせて。午後のティータイムに彩りを添える一品です。</p>
+ 
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card card-custom p-3 text-center">
+                    <img src="スコーン皿.jpg" class="img-fluid rounded-3 mb-2" alt="焼き立ての梅スコーン">
+                    <p class="text-muted small mb-0">焼き立ての様子</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-custom">
+                    <h5 class="card-title">材料</h5>
+                    <dl class="ingredients-list">
+                        <dt><span>薄力粉</span><span>200g</span></dt>
+                        <dt><span>バター</span><span>50g</span></dt>
+                        <dt><span>梅コンフィチュール</span><span>大さじ2</span></dt>
+                        <dt><span>ヨーグルト</span><span>50g</span></dt>
+                        <dt><span>牛乳</span><span>30ml</span></dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-custom">
+                    <h5 class="card-title">作り方</h5>
+                    <div class="step-item"><div class="step-content"><span class="step-number">1</span><span class="step-text">粉類に冷えたバターを加え、ポロポロになるまで混ぜる。</span></div></div>
+                    <div class="step-item"><div class="step-content"><span class="step-number">2</span><span class="step-text">梅コンフィチュールと乳製品を加え、さっくりとまとめる。</span></div></div>
+                    <div class="step-item"><div class="step-content"><span class="step-number">3</span><span class="step-text">200℃のオーブンで約15〜20分焼き上げる。</span></div></div>
+                    <div class="point-box">
+                        💡 <strong>Point:</strong> 生地をこねすぎないことが、サクサクに仕上げる秘訣です。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- 03 梅スコーン -->
+    <section class="recipe-section">
+        <div class="row align-items-end mb-4">
+            <div class="col-auto">
+                <span class="recipe-number">03</span>
+            </div>
+            <div class="col">
+                <h2 class="recipe-title">梅スコーン</h2>
+                <p class="text-muted small">サクサクの生地に甘酸っぱい梅コンフィチュールを混ぜ込んだ、午後のティータイムにぴったりの一品です。紅茶やコーヒーとの相性も抜群です。</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card card-custom p-3 text-center">
+                    <img src="スコーン皿.jpg" class="img-fluid rounded-3 mb-2" alt="焼き立ての梅スコーン">
+                    <p class="text-muted small mb-0">焼き立ての様子</p>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="card card-custom p-4">
+                    <h5 class="mb-3"><small>材料</small></h5>
+                    <dl class="ingredients-list">
+                        <dt><span>薄力粉</span><span>200g</span></dt>
+                        <dt><span>ベーキングパウダー</span><span>7g</span></dt>
+                        <dt><span>砂糖</span><span>30g</span></dt>
+                        <dt><span>塩</span><span>ひとつまみ</span></dt>
+                        <dt><span>バター（無塩）</span><span>50g</span></dt>
+                        <dt><span>ヨーグルト</span><span>50g</span></dt>
+                        <dt><span>卵（M）</span><span>1個</span></dt>
+                        <dt><span>牛乳</span><span>30ml</span></dt>
+                        <dt><span>梅コンフィチュール</span><span>大さじ2</span></dt>
+                    </dl>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card card-custom p-4">
+                    <h5 class="mb-3"><small>作り方</small></h5>
+                    <div class="mb-3">
+                        <span class="step-number">1</span>粉類を混ぜる。
+                        <p class="text-muted small ps-4">薄力粉、ベーキングパウダー、砂糖、塩をボウルに入れ泡立て器で混ぜる。</p>
+                    </div>
+                    <div class="mb-3">
+                        <span class="step-number">5</span>焼く。
+                        <p class="text-muted small ps-4">200度に予熱したオーブンで15〜20分、表面に焼き色がつくまで焼き上げる。</p>
+                    </div>
+                    <div class="point-box">
+                        💡 <strong>Point:</strong> 生地をこねすぎないように注意することで、サクッとした食感に仕上がります。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- 04 豚挽肉の梅ソース -->
+    <section class="recipe-section">
+        <div class="recipe-header d-flex align-items-end">
+            <span class="recipe-number me-3">04</span>
+            <h2 class="recipe-title">豚挽肉の梅ソース</h2>
+        </div>
+        <p class="text-muted mb-4">お肉料理の味を引き立てる万能ソース。梅の酸味が食欲をそそります。</p>
+ 
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card card-custom p-3 text-center">
+                    <img src="04.jpg" class="img-fluid rounded-3 mb-2" alt="焼き立ての梅スコーン">
+                    <p class="text-muted small mb-0">焼き立ての様子</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-custom">
+                    <h5 class="card-title">材料</h5>
+                    <dl class="ingredients-list">
+                        <dt><span>豚肩ロース肉</span><span>300g</span></dt>
+                        <dt><span>梅コンフィチュール</span><span>大さじ2</span></dt>
+                        <dt><span>赤ワイン</span><span>大さじ2</span></dt>
+                        <dt><span>醤油</span><span>小さじ1</span></dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-custom">
+                    <h5 class="card-title">作り方</h5>
+                    <div class="step-item"><div class="step-content"><span class="step-number">1</span><span class="step-text">肉を好みの加減に焼き上げ、一度取り出す。</span></div></div>
+                    <div class="step-item"><div class="step-content"><span class="step-number">2</span><span class="step-text">肉汁の残ったフライパンに調味料を入れ、煮詰める。</span></div></div>
+                    <div class="step-item"><div class="step-content"><span class="step-number">3</span><span class="step-text">ソースをたっぷりとかけて完成。</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- 05 胡瓜の梅コンフィチュールあえ -->
+    <section class="recipe-section">
+        <div class="recipe-header d-flex align-items-end">
+            <span class="recipe-number me-3">05</span>
+            <h2 class="recipe-title">胡瓜の梅コンフィチュールあえ</h2>
+        </div>
+        <p class="text-muted mb-4">火を使わず、和えるだけで完成。あと一品に重宝するスピードレシピです。</p>
+ 
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card card-custom p-3 text-center">
+                    <img src="05.jpg" class="img-fluid rounded-3 mb-2" alt="焼き立ての梅スコーン">
+                    <p class="text-muted small mb-0">焼き立ての様子</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-custom">
+                    <h5 class="card-title">材料</h5>
+                    <dl class="ingredients-list">
+                        <dt><span>胡瓜</span><span>2本</span></dt>
+                        <dt><span>梅コンフィチュール</span><span>大さじ1</span></dt>
+                        <dt><span>塩</span><span>少々</span></dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-custom">
+                    <h5 class="card-title">作り方</h5>
+                    <div class="step-item"><div class="step-content"><span class="step-number">1</span><span class="step-text">胡瓜を叩いて、食べやすい大きさに割る。</span></div></div>
+                    <div class="step-item"><div class="step-content"><span class="step-number">2</span><span class="step-text">梅コンフィチュールと塩でさっくりと和える。</span></div></div>
+                    <div class="point-box">
+                        💡 <strong>Point:</strong> 食べる直前に和えると、水っぽくならず美味しくいただけます。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ 
+</div>
+ 
+<footer>
+    <div class="container">
+        <p>HOMEMADE RECIPE COLLECTION</p>
+        <p class="small">&copy; 2026 梅のコンフィチュール活用レシピ集. All Rights Reserved.</p>
+    </div>
+</footer>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
